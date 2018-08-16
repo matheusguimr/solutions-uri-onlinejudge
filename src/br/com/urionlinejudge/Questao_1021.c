@@ -1,24 +1,20 @@
 #include <stdio.h>
 
 int main() {
-
     int notas, nota100, nota50, nota20, nota10, nota5, nota2, nota1;
     int moedas, moeda50, moeda25, moeda10, moeda5, moeda1;
     double valorDouble;
 
     scanf("%lf", &valorDouble);
 
-    if (notas > 1000001) {
-        printf("Erro");
-    } else
-        valorDouble = valorDouble * 100;
+    if (notas > 1000001) { printf("Erro"); }
+    else { valorDouble = valorDouble * 100; }
+
     notas = valorDouble / 100;
     valorDouble = valorDouble / 100;
     moedas = ((valorDouble - notas) * 100);
 
-    if ((moedas * 1000) % 10 == 9) {
-        moedas++;
-    }
+    if ((moedas * 1000) % 10 == 9) { moedas++; }
 
     nota100 = notas / 100;
     notas %= 100;
@@ -51,7 +47,6 @@ int main() {
     printf("%d nota(s) de R$ 10.00\n", nota10);
     printf("%d nota(s) de R$ 5.00\n", nota5);
     printf("%d nota(s) de R$ 2.00\n", nota2);
-
 
     printf("MOEDAS:\n");
     printf("%d moeda(s) de R$ 1.00\n", nota1);
