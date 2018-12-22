@@ -1,2 +1,2 @@
-# urionlinejudge
-Repositorio com respostas de algumas questoes do site https://www.urionlinejudge.com.br
+# solutions-uri-online-judge
+URI Online Judge solutions - https://www.urionlinejudge.com.br
